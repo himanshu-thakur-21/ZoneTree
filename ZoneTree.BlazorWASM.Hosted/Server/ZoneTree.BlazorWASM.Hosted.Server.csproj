@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.AspNetCore.Components.WebAssembly.Server" Version="7.0.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\ZoneTree.Blazor.Common\ZoneTree.Blazor.Common.csproj" />
+    <ProjectReference Include="..\Client\ZoneTree.BlazorWASM.Hosted.Client.csproj" />
+    <ProjectReference Include="..\Shared\ZoneTree.BlazorWASM.Hosted.Shared.csproj" />
+  </ItemGroup>
+
+
+</Project>
